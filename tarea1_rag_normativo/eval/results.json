@@ -1,0 +1,782 @@
+{
+  "recall": {
+    "recall@1": 0.667,
+    "recall@3": 0.8,
+    "recall@5": 0.8
+  },
+  "in_domain_top_similarity": {
+    "min": 0.6562,
+    "max": 0.8401,
+    "mean": 0.7495,
+    "values": [
+      0.7805,
+      0.6899,
+      0.8083,
+      0.8273,
+      0.8328,
+      0.6996,
+      0.6669,
+      0.6698,
+      0.8401,
+      0.8147,
+      0.7594,
+      0.6562,
+      0.7572,
+      0.7795,
+      0.6595
+    ]
+  },
+  "out_domain_top_similarity": {
+    "min": 0.6229,
+    "max": 0.7889,
+    "mean": 0.697,
+    "values": [
+      0.7152,
+      0.6354,
+      0.6229,
+      0.7889,
+      0.7225
+    ]
+  },
+  "calibrated_similarity_threshold": 0.64,
+  "coverage_in_domain_at_threshold": 1.0,
+  "abstention_rate_out_domain_at_threshold": 0.4,
+  "per_question": [
+    {
+      "id": 1,
+      "domain": "in_domain",
+      "question": "¿Cual es el objeto de la Ley General de Contrataciones Publicas?",
+      "top_similarity": 0.7805,
+      "top5": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 5",
+          "similarity": 0.7805
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "PRIMERA",
+          "similarity": 0.7733
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 3",
+          "similarity": 0.7467
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 2",
+          "similarity": 0.7071
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "DÉCIMA SÉPTIMA",
+          "similarity": 0.7034
+        }
+      ],
+      "expected": {
+        "doc_id": "ley_32069",
+        "unit_label": "Artículo 1"
+      },
+      "found_at_rank": null
+    },
+    {
+      "id": 2,
+      "domain": "in_domain",
+      "question": "¿Cual es la finalidad de la Ley 32069?",
+      "top_similarity": 0.6899,
+      "top5": [
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 2",
+          "similarity": 0.6899
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "VIGÉSIMA SÉPTIMA",
+          "similarity": 0.6648
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 3",
+          "similarity": 0.6634
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "ÚNICA",
+          "similarity": 0.6535
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 93",
+          "similarity": 0.6529
+        }
+      ],
+      "expected": {
+        "doc_id": "ley_32069",
+        "unit_label": "Artículo 2"
+      },
+      "found_at_rank": null
+    },
+    {
+      "id": 3,
+      "domain": "in_domain",
+      "question": "¿Que principios rigen la contratacion publica segun la ley?",
+      "top_similarity": 0.8083,
+      "top5": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 5",
+          "similarity": 0.8083
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 71",
+          "similarity": 0.7705
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "PRIMERA",
+          "similarity": 0.7646
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 63",
+          "similarity": 0.7235
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 85",
+          "similarity": 0.7211
+        }
+      ],
+      "expected": {
+        "doc_id": "ley_32069",
+        "unit_label": "Artículo 5"
+      },
+      "found_at_rank": 0
+    },
+    {
+      "id": 4,
+      "domain": "in_domain",
+      "question": "¿Que es el OECE y cuales son sus funciones?",
+      "top_similarity": 0.8273,
+      "top5": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 11",
+          "similarity": 0.8273
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "VIGÉSIMA TERCERA",
+          "similarity": 0.6888
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 4",
+          "similarity": 0.6792
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 15",
+          "similarity": 0.6429
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 12",
+          "similarity": 0.6422
+        }
+      ],
+      "expected": {
+        "doc_id": "ley_32069",
+        "unit_label": "Artículo 11"
+      },
+      "found_at_rank": 0
+    },
+    {
+      "id": 5,
+      "domain": "in_domain",
+      "question": "¿Cuales son los impedimentos para contratar con una entidad contratante?",
+      "top_similarity": 0.8328,
+      "top5": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 30",
+          "similarity": 0.8328
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 40",
+          "similarity": 0.722
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 46",
+          "similarity": 0.7109
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 48",
+          "similarity": 0.6686
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 153",
+          "similarity": 0.6679
+        }
+      ],
+      "expected": {
+        "doc_id": "ley_32069",
+        "unit_label": "Artículo 30"
+      },
+      "found_at_rank": 0
+    },
+    {
+      "id": 6,
+      "domain": "in_domain",
+      "question": "¿En que idioma se desarrolla el arbitraje regulado por la Ley 32069 y cuando puede ser ad hoc?",
+      "top_similarity": 0.6996,
+      "top5": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 84",
+          "similarity": 0.6996
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 338",
+          "similarity": 0.6554
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 85",
+          "similarity": 0.6013
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 11",
+          "similarity": 0.5995
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 383",
+          "similarity": 0.5913
+        }
+      ],
+      "expected": {
+        "doc_id": "ley_32069",
+        "unit_label": "Artículo 84"
+      },
+      "found_at_rank": 0
+    },
+    {
+      "id": 7,
+      "domain": "in_domain",
+      "question": "¿Que supuestos estan excluidos del ambito de aplicacion de la ley?",
+      "top_similarity": 0.6669,
+      "top5": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 92",
+          "similarity": 0.6669
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 70",
+          "similarity": 0.655
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 7",
+          "similarity": 0.643
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 85",
+          "similarity": 0.6346
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 33",
+          "similarity": 0.6345
+        }
+      ],
+      "expected": {
+        "doc_id": "ley_32069",
+        "unit_label": "Artículo 7"
+      },
+      "found_at_rank": 2
+    },
+    {
+      "id": 8,
+      "domain": "in_domain",
+      "question": "¿Que son los mecanismos diferenciados de adquisicion (MDA) y quienes los pueden usar?",
+      "top_similarity": 0.6698,
+      "top5": [
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 295",
+          "similarity": 0.6698
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 44",
+          "similarity": 0.6005
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "OCTAVA",
+          "similarity": 0.5566
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 10",
+          "similarity": 0.5453
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "SEGUNDA",
+          "similarity": 0.5322
+        }
+      ],
+      "expected": {
+        "doc_id": "ley_32069",
+        "unit_label": "Artículo 44"
+      },
+      "found_at_rank": 1
+    },
+    {
+      "id": 9,
+      "domain": "in_domain",
+      "question": "¿Que tipos de adelantos puede entregar la entidad contratante al contratista?",
+      "top_similarity": 0.8401,
+      "top5": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 66",
+          "similarity": 0.8401
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 286",
+          "similarity": 0.7292
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 67",
+          "similarity": 0.7131
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 52",
+          "similarity": 0.698
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 176",
+          "similarity": 0.6746
+        }
+      ],
+      "expected": {
+        "doc_id": "ley_32069",
+        "unit_label": "Artículo 66"
+      },
+      "found_at_rank": 0
+    },
+    {
+      "id": 10,
+      "domain": "in_domain",
+      "question": "¿Que es Peru Compras y cuales son sus funciones?",
+      "top_similarity": 0.8147,
+      "top5": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 20",
+          "similarity": 0.8147
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 24",
+          "similarity": 0.7377
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 21",
+          "similarity": 0.712
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "VIGÉSIMA PRIMERA",
+          "similarity": 0.6705
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 36",
+          "similarity": 0.6586
+        }
+      ],
+      "expected": {
+        "doc_id": "ley_32069",
+        "unit_label": "Artículo 20"
+      },
+      "found_at_rank": 0
+    },
+    {
+      "id": 11,
+      "domain": "in_domain",
+      "question": "Segun el D.S. 001-2026-EF, ¿en que consiste la segmentacion de contrataciones?",
+      "top_similarity": 0.7594,
+      "top5": [
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 42",
+          "similarity": 0.7594
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 42",
+          "similarity": 0.7214
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 125",
+          "similarity": 0.7012
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 34",
+          "similarity": 0.6713
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 153",
+          "similarity": 0.6421
+        }
+      ],
+      "expected": {
+        "doc_id": "ds_001_2026_ef",
+        "unit_label": "Artículo 42"
+      },
+      "found_at_rank": 0
+    },
+    {
+      "id": 12,
+      "domain": "in_domain",
+      "question": "¿Ante quien se eleva el pliego de absolucion de consultas y observaciones segun la modificacion del D.S. 001-2026-EF?",
+      "top_similarity": 0.6562,
+      "top5": [
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 67",
+          "similarity": 0.6562
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 389",
+          "similarity": 0.603
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 149",
+          "similarity": 0.5909
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 72",
+          "similarity": 0.5757
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 78",
+          "similarity": 0.572
+        }
+      ],
+      "expected": {
+        "doc_id": "ds_001_2026_ef",
+        "unit_label": "Artículo 67"
+      },
+      "found_at_rank": 0
+    },
+    {
+      "id": 13,
+      "domain": "in_domain",
+      "question": "Segun el D.S. 001-2026-EF, si la parte perjudicada por la resolucion del contrato es la entidad contratante, ¿que puede hacer?",
+      "top_similarity": 0.7572,
+      "top5": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 63",
+          "similarity": 0.7572
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 87",
+          "similarity": 0.747
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 229",
+          "similarity": 0.7405
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 66",
+          "similarity": 0.7349
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 78",
+          "similarity": 0.7284
+        }
+      ],
+      "expected": {
+        "doc_id": "ds_001_2026_ef",
+        "unit_label": "Artículo 123"
+      },
+      "found_at_rank": null
+    },
+    {
+      "id": 14,
+      "domain": "in_domain",
+      "question": "¿En que caso puede la entidad contratante inaplicar temporalmente un impedimento por una contratacion complementaria, segun el D.S. 001-2026-EF?",
+      "top_similarity": 0.7795,
+      "top5": [
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 40",
+          "similarity": 0.7795
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 86",
+          "similarity": 0.7143
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 34",
+          "similarity": 0.6966
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 66",
+          "similarity": 0.6932
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 286",
+          "similarity": 0.6924
+        }
+      ],
+      "expected": {
+        "doc_id": "ds_001_2026_ef",
+        "unit_label": "Artículo 40"
+      },
+      "found_at_rank": 0
+    },
+    {
+      "id": 15,
+      "domain": "in_domain",
+      "question": "¿Que informacion se considera para valorar el desempeño (reputacion) de los proveedores segun el D.S. 001-2026-EF?",
+      "top_similarity": 0.6595,
+      "top5": [
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 37",
+          "similarity": 0.6595
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "DÉCIMA OCTAVA",
+          "similarity": 0.5981
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 286",
+          "similarity": 0.5793
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 223",
+          "similarity": 0.572
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 207",
+          "similarity": 0.5551
+        }
+      ],
+      "expected": {
+        "doc_id": "ds_001_2026_ef",
+        "unit_label": "Artículo 37"
+      },
+      "found_at_rank": 0
+    },
+    {
+      "id": 16,
+      "domain": "out_of_domain",
+      "question": "¿Cuales son las causales de despido justificado en el regimen laboral privado peruano?",
+      "top_similarity": 0.7152,
+      "top5": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 23",
+          "similarity": 0.7152
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 36",
+          "similarity": 0.6748
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "QUINTA",
+          "similarity": 0.6713
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 7",
+          "similarity": 0.6639
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 5",
+          "similarity": 0.6552
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "domain": "out_of_domain",
+      "question": "¿Cual es la tasa actual del Impuesto General a las Ventas (IGV) en Peru?",
+      "top_similarity": 0.6354,
+      "top5": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 20",
+          "similarity": 0.6354
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 24",
+          "similarity": 0.6214
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 36",
+          "similarity": 0.6099
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 4",
+          "similarity": 0.6044
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 21",
+          "similarity": 0.5786
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "domain": "out_of_domain",
+      "question": "¿Como se calcula la Compensacion por Tiempo de Servicios (CTS) de un trabajador?",
+      "top_similarity": 0.6229,
+      "top5": [
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 114",
+          "similarity": 0.6229
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 149",
+          "similarity": 0.6107
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 211",
+          "similarity": 0.5906
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 161",
+          "similarity": 0.544
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 67",
+          "similarity": 0.5435
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "domain": "out_of_domain",
+      "question": "¿Que requisitos exige la Ley General de Sociedades para constituir una empresa en Peru?",
+      "top_similarity": 0.7889,
+      "top5": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 36",
+          "similarity": 0.7889
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "SEGUNDA",
+          "similarity": 0.7644
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 22",
+          "similarity": 0.7521
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 244",
+          "similarity": 0.744
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 35",
+          "similarity": 0.7423
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "domain": "out_of_domain",
+      "question": "¿Cuales son los plazos de prescripcion de un delito tributario en el Codigo Tributario peruano?",
+      "top_similarity": 0.7225,
+      "top5": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "VIGÉSIMA NOVENA",
+          "similarity": 0.7225
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 22",
+          "similarity": 0.6749
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 5",
+          "similarity": 0.6394
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "VIGÉSIMA PRIMERA",
+          "similarity": 0.6186
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 36",
+          "similarity": 0.6168
+        }
+      ]
+    }
+  ],
+  "openai_embeddings_comparison": "NO EJECUTADA: falta OPENAI_API_KEY (ver docs/fase4_evaluacion.md)"
+}

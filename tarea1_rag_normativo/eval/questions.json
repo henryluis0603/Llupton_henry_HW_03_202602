@@ -1,0 +1,25 @@
+{
+  "_nota": "Las 15 preguntas 'in_domain' se redactaron a partir del texto real extraido (ver data/processed/*_chunks.jsonl), citando el articulo correcto como ground truth para calcular Recall@k. Las 5 'out_of_domain' son temas legales peruanos reales pero fuera de los dos documentos indexados (Ley 32069 y D.S. 001-2026-EF), para medir la tasa de abstencion.",
+  "questions": [
+    {"id": 1, "domain": "in_domain", "question": "¿Cual es el objeto de la Ley General de Contrataciones Publicas?", "expected_doc_id": "ley_32069", "expected_unit_label": "Artículo 1"},
+    {"id": 2, "domain": "in_domain", "question": "¿Cual es la finalidad de la Ley 32069?", "expected_doc_id": "ley_32069", "expected_unit_label": "Artículo 2"},
+    {"id": 3, "domain": "in_domain", "question": "¿Que principios rigen la contratacion publica segun la ley?", "expected_doc_id": "ley_32069", "expected_unit_label": "Artículo 5"},
+    {"id": 4, "domain": "in_domain", "question": "¿Que es el OECE y cuales son sus funciones?", "expected_doc_id": "ley_32069", "expected_unit_label": "Artículo 11"},
+    {"id": 5, "domain": "in_domain", "question": "¿Cuales son los impedimentos para contratar con una entidad contratante?", "expected_doc_id": "ley_32069", "expected_unit_label": "Artículo 30"},
+    {"id": 6, "domain": "in_domain", "question": "¿En que idioma se desarrolla el arbitraje regulado por la Ley 32069 y cuando puede ser ad hoc?", "expected_doc_id": "ley_32069", "expected_unit_label": "Artículo 84"},
+    {"id": 7, "domain": "in_domain", "question": "¿Que supuestos estan excluidos del ambito de aplicacion de la ley?", "expected_doc_id": "ley_32069", "expected_unit_label": "Artículo 7"},
+    {"id": 8, "domain": "in_domain", "question": "¿Que son los mecanismos diferenciados de adquisicion (MDA) y quienes los pueden usar?", "expected_doc_id": "ley_32069", "expected_unit_label": "Artículo 44"},
+    {"id": 9, "domain": "in_domain", "question": "¿Que tipos de adelantos puede entregar la entidad contratante al contratista?", "expected_doc_id": "ley_32069", "expected_unit_label": "Artículo 66"},
+    {"id": 10, "domain": "in_domain", "question": "¿Que es Peru Compras y cuales son sus funciones?", "expected_doc_id": "ley_32069", "expected_unit_label": "Artículo 20"},
+    {"id": 11, "domain": "in_domain", "question": "Segun el D.S. 001-2026-EF, ¿en que consiste la segmentacion de contrataciones?", "expected_doc_id": "ds_001_2026_ef", "expected_unit_label": "Artículo 42"},
+    {"id": 12, "domain": "in_domain", "question": "¿Ante quien se eleva el pliego de absolucion de consultas y observaciones segun la modificacion del D.S. 001-2026-EF?", "expected_doc_id": "ds_001_2026_ef", "expected_unit_label": "Artículo 67"},
+    {"id": 13, "domain": "in_domain", "question": "Segun el D.S. 001-2026-EF, si la parte perjudicada por la resolucion del contrato es la entidad contratante, ¿que puede hacer?", "expected_doc_id": "ds_001_2026_ef", "expected_unit_label": "Artículo 123"},
+    {"id": 14, "domain": "in_domain", "question": "¿En que caso puede la entidad contratante inaplicar temporalmente un impedimento por una contratacion complementaria, segun el D.S. 001-2026-EF?", "expected_doc_id": "ds_001_2026_ef", "expected_unit_label": "Artículo 40"},
+    {"id": 15, "domain": "in_domain", "question": "¿Que informacion se considera para valorar el desempeño (reputacion) de los proveedores segun el D.S. 001-2026-EF?", "expected_doc_id": "ds_001_2026_ef", "expected_unit_label": "Artículo 37"},
+    {"id": 16, "domain": "out_of_domain", "question": "¿Cuales son las causales de despido justificado en el regimen laboral privado peruano?", "expected_doc_id": null, "expected_unit_label": null},
+    {"id": 17, "domain": "out_of_domain", "question": "¿Cual es la tasa actual del Impuesto General a las Ventas (IGV) en Peru?", "expected_doc_id": null, "expected_unit_label": null},
+    {"id": 18, "domain": "out_of_domain", "question": "¿Como se calcula la Compensacion por Tiempo de Servicios (CTS) de un trabajador?", "expected_doc_id": null, "expected_unit_label": null},
+    {"id": 19, "domain": "out_of_domain", "question": "¿Que requisitos exige la Ley General de Sociedades para constituir una empresa en Peru?", "expected_doc_id": null, "expected_unit_label": null},
+    {"id": 20, "domain": "out_of_domain", "question": "¿Cuales son los plazos de prescripcion de un delito tributario en el Codigo Tributario peruano?", "expected_doc_id": null, "expected_unit_label": null}
+  ]
+}

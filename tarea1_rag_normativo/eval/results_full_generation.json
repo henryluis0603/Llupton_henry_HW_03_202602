@@ -1,0 +1,743 @@
+{
+  "results": [
+    {
+      "id": 1,
+      "domain": "in_domain",
+      "question": "¿Cual es el objeto de la Ley General de Contrataciones Publicas?",
+      "expected_doc_id": "ley_32069",
+      "expected_unit_label": "Artículo 1",
+      "engine_answer": "El objeto de la Ley General de Contrataciones Públicas es maximizar el uso de recursos públicos en las contrataciones de bienes, servicios y obras por parte del Estado, en términos de eficacia, eficiencia y economía, de tal manera que dichas contrataciones permitan el cumplimiento oportunamente de los fines públicos y mejoren las condiciones de vida de los ciudadanos.",
+      "abstained": false,
+      "top_similarity": 0.7805,
+      "citations": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 5",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 4,
+          "similarity": 0.7805
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "PRIMERA",
+          "section": "DISPOSICIONES COMPLEMENTARIAS FINALES",
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 71,
+          "similarity": 0.7733
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 3",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 1,
+          "similarity": 0.7467
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 2",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 1,
+          "similarity": 0.7071
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "DÉCIMA SÉPTIMA",
+          "section": "DISPOSICIONES COMPLEMENTARIAS FINALES",
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 78,
+          "similarity": 0.7034
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_s": 358.83
+    },
+    {
+      "id": 2,
+      "domain": "in_domain",
+      "question": "¿Cual es la finalidad de la Ley 32069?",
+      "expected_doc_id": "ley_32069",
+      "expected_unit_label": "Artículo 2",
+      "engine_answer": "La finalidad de la Ley 32069 es modificar diversos artículos del Reglamento de la Ley Nº 32069, Ley General de Contrataciones Públicas, aprobado mediante el Decreto Supremo Nº 009-2025-EF.",
+      "abstained": false,
+      "top_similarity": 0.6899,
+      "citations": [
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 2",
+          "section": null,
+          "version_label": "D.S. 001-2026-EF, publicado 2026-01-08",
+          "page": 1,
+          "similarity": 0.6899
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "VIGÉSIMA SÉPTIMA",
+          "section": "DISPOSICIONES COMPLEMENTARIAS FINALES",
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 86,
+          "similarity": 0.6648
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 3",
+          "section": "DISPOSICIONES COMPLEMENTARIAS FINALES",
+          "version_label": "D.S. 001-2026-EF, publicado 2026-01-08",
+          "page": 13,
+          "similarity": 0.6634
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "ÚNICA",
+          "section": "DISPOSICIONES COMPLEMENTARIAS TRANSITORIAS",
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 90,
+          "similarity": 0.6535
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 93",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 67,
+          "similarity": 0.6529
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_s": 21.59
+    },
+    {
+      "id": 3,
+      "domain": "in_domain",
+      "question": "¿Que principios rigen la contratacion publica segun la ley?",
+      "expected_doc_id": "ley_32069",
+      "expected_unit_label": "Artículo 5",
+      "engine_answer": "Según el texto consolidado de la Ley 32069, los principios que rigen la contratación pública son:\n\n1. El tiempo de duración debe prever la posibilidad de repotenciarse, integrarse o adecuarse a los nuevos avances científicos y tecnológicos.\n\n2. Las contrataciones públicas se rigen también por los principios previstos en el artículo 2 del Decreto Legislativo 1439, Decreto Legislativo del Sistema Nacional de Abastecimiento, sin perjuicio de otros principios generales de derecho público que resulten aplicables.\n\n3. Los principios que rigen las contrataciones públicas sirven de criterio de interpretación para la aplicación de la presente ley y su reglamento, de integración ante sus vacíos y como parámetros para la actuación de todos aquellos involucrados en el proceso de contratación.\n\nEstos principios guían la forma y contenido de las contrataciones públicas en Chile.",
+      "abstained": false,
+      "top_similarity": 0.8083,
+      "citations": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 5",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 4,
+          "similarity": 0.8083
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 71",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 49,
+          "similarity": 0.7705
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "PRIMERA",
+          "section": "DISPOSICIONES COMPLEMENTARIAS FINALES",
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 71,
+          "similarity": 0.7646
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 63",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 43,
+          "similarity": 0.7235
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 85",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 61,
+          "similarity": 0.7211
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_s": 40.03
+    },
+    {
+      "id": 4,
+      "domain": "in_domain",
+      "question": "¿Que es el OECE y cuales son sus funciones?",
+      "expected_doc_id": "ley_32069",
+      "expected_unit_label": "Artículo 11",
+      "engine_answer": "El OECE es un organismo técnico especializado adscrito al Ministerio de Economía y Finanzas, con personería jurídica de derecho público, que constituye pliego presupuestal y goza de autonomía técnica, administrativa, funcional, económica y financiera. Su función principal es proporcionar asistencia técnica y orientación en la normativa de contratación pública, supervisar el cumplimiento de la normativa de contratación pública y el desarrollo de todo el proceso de contratación, contribuyendo a la eficiencia del Sistema Nacional de Abastecimiento. Además, el OECE tiene otras funciones como brindar asistencia técnica y orientación en la normativa de contratación pública, supervisar de forma selectiva o aleatoria la gestión de los procesos de contratación, incluyendo los contratos menores, y administrar, diseñar, desarrollar, operar, integrar datos y evaluar la Plática Digital para las Contrataciones Públicas (Pladicop).",
+      "abstained": false,
+      "top_similarity": 0.8273,
+      "citations": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 11",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 11,
+          "similarity": 0.8273
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "VIGÉSIMA TERCERA",
+          "section": "DISPOSICIONES COMPLEMENTARIAS FINALES",
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 85,
+          "similarity": 0.6888
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 4",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 2,
+          "similarity": 0.6792
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 15",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 15,
+          "similarity": 0.6429
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 12",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 14,
+          "similarity": 0.6422
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_s": 37.48
+    },
+    {
+      "id": 5,
+      "domain": "in_domain",
+      "question": "¿Cuales son los impedimentos para contratar con una entidad contratante?",
+      "expected_doc_id": "ley_32069",
+      "expected_unit_label": "Artículo 30",
+      "engine_answer": "Los impedimentos para contratar con una entidad contratante, como mencionado en el artículo 30 de la ley 32069, incluyen:\n\n1. **El reglamento desarrolla los supuestos de inaplicación temporal del impedimento si, como consecuencia de este, se genera riesgo de desabastecimiento en la prestación de servicios.**\n\nEsto implica que existen ciertos circunstancias específicas (como el riesgo de desabastecimiento) que pueden hacer que el impedimento para contratar sea inaplicable temporalmente, permitiendo a la entidad contratante realizar una contratación complementaria bajo las mismas condiciones previstas en el numeral 40.2 del mismo texto.\n\nAdemás, el artículo 40 de la disposición especial 001-2026-EF explica cómo la entidad contratante puede inaplicar temporalmente el impedimento para contratar al contratista en caso requiera realizar una contratación complementaria, bajo las mismas condiciones previstas en el numeral 40.2.\n\nPor último, el artículo 46 de la ley 32069 detalla cómo se realiza el requerimiento para iniciar el proceso de contratación, que es fundamental para la realización de cualquier contrato. Este proceso asegura que todos los proveedores tengan las mismas condiciones y oportunidades para participar",
+      "abstained": false,
+      "top_similarity": 0.8328,
+      "citations": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 30",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 24,
+          "similarity": 0.8328
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 40",
+          "section": null,
+          "version_label": "D.S. 001-2026-EF, publicado 2026-01-08",
+          "page": 2,
+          "similarity": 0.722
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 46",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 32,
+          "similarity": 0.7109
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 48",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 33,
+          "similarity": 0.6686
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 153",
+          "section": null,
+          "version_label": "D.S. 001-2026-EF, publicado 2026-01-08",
+          "page": 6,
+          "similarity": 0.6679
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_s": 49.94
+    },
+    {
+      "id": 6,
+      "domain": "in_domain",
+      "question": "¿En que idioma se desarrolla el arbitraje regulado por la Ley 32069 y cuando puede ser ad hoc?",
+      "expected_doc_id": "ley_32069",
+      "expected_unit_label": "Artículo 84",
+      "engine_answer": "El arbitraje regulado por la Ley 32069 se desarrolla en idioma español. Además, según el artículo 84.1, el arbitraje puede ser ad hoc solo en los casos en los que el monto de la controversia no supere las diez UIT (Unités Internacionales de Trabajo).",
+      "abstained": false,
+      "top_similarity": 0.6996,
+      "citations": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 84",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 58,
+          "similarity": 0.6996
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 338",
+          "section": null,
+          "version_label": "D.S. 001-2026-EF, publicado 2026-01-08",
+          "page": 11,
+          "similarity": 0.6554
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_s": 16.62
+    },
+    {
+      "id": 7,
+      "domain": "in_domain",
+      "question": "¿Que supuestos estan excluidos del ambito de aplicacion de la ley?",
+      "expected_doc_id": "ley_32069",
+      "expected_unit_label": "Artículo 7",
+      "engine_answer": "Según el texto legal citado:\n\nSe excluyen de las disposiciones de la presente ley los siguientes supuestos, con excepción de aquellas referidas a los principios que rigen las contrataciones públicas:\n\na) Los contratos bancarios y financieros provenientes de un servicio financiero, lo que incluye a todos los servicios accesorios o auxiliares de un servicio de naturaleza financiera, salvo la contratación de seguros y el arrendamiento financiero, distinto de aquel que se regula en el Decreto Legislativo 1437, Decreto Legislativo del Sistema Nacional de Endeudamiento Público.\n\nb) Las contrataciones realizadas por los órganos del Servicio Exterior de la República fuera del territorio nacional, exclusivamente para su funcionamiento y gestión.\n\nc) La contratación de notarios públicos por debajo de los montos que sean establecidos en el reglamento.\n\nd) Las contrataciones efectuadas por el Ministerio de Relaciones Exteriores para atender la realización en el Perú, de la transmisión del mando supremo y de cumbres internacionales previamente declaradas de interés nacional, así como sus eventos conexos, que cuenten con la participación de jefes de Estado, jefes de Gobierno, altos dignatarios y comisionados,",
+      "abstained": false,
+      "top_similarity": 0.6669,
+      "citations": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 92",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 66,
+          "similarity": 0.6669
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 70",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 48,
+          "similarity": 0.655
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 7",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 8,
+          "similarity": 0.643
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_s": 51.44
+    },
+    {
+      "id": 8,
+      "domain": "in_domain",
+      "question": "¿Que son los mecanismos diferenciados de adquisicion (MDA) y quienes los pueden usar?",
+      "expected_doc_id": "ley_32069",
+      "expected_unit_label": "Artículo 44",
+      "engine_answer": "Los mecanismos diferenciados de adquisición (MDA) son instrumentos utilizados por las entidades contratantes para seleccionar y comprar servicios, productos o tecnologías sanitarias. Estos mecanismos permiten a las entidades elegir entre diferentes opciones disponibles, considerando factores como costos, eficiencia y calidad del servicio. Los MDA se aplican cuando hay múltiples opciones técnicas disponibles para resolver una misma necesidad o problema, y se deben tomar decisiones basadas en criterios objetivos y transparentes. Las entidades que pueden utilizar estos mecanismos incluyen:\n\n1. Entidades públicas gubernamentales\n2. Entidades privadas comerciales\n3. Organizaciones sin fines de lucro\n\nEstos mecanismos ayudan a garantizar que las compras sean efectivas, eficientes y equitativas, minimizando posibles desigualdades y asegurando que los recursos se utilicen de manera óptima.",
+      "abstained": false,
+      "top_similarity": 0.6698,
+      "citations": [
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 295",
+          "section": null,
+          "version_label": "D.S. 001-2026-EF, publicado 2026-01-08",
+          "page": 11,
+          "similarity": 0.6698
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_s": 32.98
+    },
+    {
+      "id": 9,
+      "domain": "in_domain",
+      "question": "¿Que tipos de adelantos puede entregar la entidad contratante al contratista?",
+      "expected_doc_id": "ley_32069",
+      "expected_unit_label": "Artículo 66",
+      "engine_answer": "Según el texto consolidado de la Ley 32.069 (artículo 66), las entidades contratantes pueden entregar adelantos al contratista con la finalidad de otorgar financiamiento o liquidez para la ejecución del contrato en las condiciones establecidas y fundamentadas en la estrategia de contratación. Estos adelantos pueden ser:\n\na) Directo.\nb) Para materiales e insumos, equipamiento y mobiliario.\nc) Otros que sean establecidos en el reglamento.\n\nAdemás, el artículo 66.3 especifica que los documentos del procedimiento de selección pueden establecer adelantos directos al contratista, los que en ningún caso exceden en conjunto del 30% del monto del contrato original.",
+      "abstained": false,
+      "top_similarity": 0.8401,
+      "citations": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 66",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 45,
+          "similarity": 0.8401
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 286",
+          "section": null,
+          "version_label": "D.S. 001-2026-EF, publicado 2026-01-08",
+          "page": 10,
+          "similarity": 0.7292
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 67",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 46,
+          "similarity": 0.7131
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 52",
+          "section": null,
+          "version_label": "D.S. 001-2026-EF, publicado 2026-01-08",
+          "page": 2,
+          "similarity": 0.698
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 176",
+          "section": null,
+          "version_label": "D.S. 001-2026-EF, publicado 2026-01-08",
+          "page": 7,
+          "similarity": 0.6746
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_s": 33.47
+    },
+    {
+      "id": 10,
+      "domain": "in_domain",
+      "question": "¿Que es Peru Compras y cuales son sus funciones?",
+      "expected_doc_id": "ley_32069",
+      "expected_unit_label": "Artículo 20",
+      "engine_answer": "Perú Compras es el organismo público ejecutor adscrito al Ministerio de Economía y Finanzas, con personería jurídica de derecho público. Constituye pliego presupuestal y goza de autonomía técnica, funcional, administrativa, económica y financiera. Su función principal es promover, conducir y efectuar, según corresponda, la estandarización de requerimientos del Estado, así como gestionar el listado de fichas técnicas, determinar sus características, diseñar, desarrollar, gestionar e integrar datos, evaluar el desempeño de las herramientas digitales a su cargo, las cuales forman parte de la Pladicop, diseñar, formular, aprobar, y difundir directivas y lineamientos en materias de su competencia y respecto de las herramientas digitales que administra, así como herramientas de gestión para el cumplimiento de sus funciones, diseñar y desarrollar indicadores que midan la eficiencia de las modalidades de contratación a su cargo, promover, conducir y gestionar los procedimientos de selección para la generación de catálogos electrónicos de acuerdo marco para la adquisición de bienes y servicios, suscribir los acuerdos correspondientes, promover, conducir y gestionar compras corporativas y compras centralizadas, conducir y gestion",
+      "abstained": false,
+      "top_similarity": 0.8147,
+      "citations": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 20",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 18,
+          "similarity": 0.8147
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 24",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 20,
+          "similarity": 0.7377
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 21",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 19,
+          "similarity": 0.712
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "VIGÉSIMA PRIMERA",
+          "section": "DISPOSICIONES COMPLEMENTARIAS FINALES",
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 84,
+          "similarity": 0.6705
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 36",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 26,
+          "similarity": 0.6586
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_s": 51.72
+    },
+    {
+      "id": 11,
+      "domain": "in_domain",
+      "question": "Segun el D.S. 001-2026-EF, ¿en que consiste la segmentacion de contrataciones?",
+      "expected_doc_id": "ds_001_2026_ef",
+      "expected_unit_label": "Artículo 42",
+      "engine_answer": "Según el D.S. 001-2026-EF:\n\nLa segmentación de contrataciones se realiza según los criterios descritos en Artículos 42.2 y 42.3 del mismo documento. \n\nEn primer lugar, se indica que \"Una vez realizada la segmentación, la DEC informa mediante documento interno a todas las áreas usuarias la clasificación efectuada a sus contrataciones en categorías, adjuntando un cronograma con las fechas estimadas para la presentación de los requerimientos correspondientes\". Esto implica que después de realizar la segmentación, la Dirección General de Contratación (DEC) proporcionará a las áreas usuarias una clasificación de las contrataciones en categorías y un cronograma con las fechas para la presentación de los requerimientos correspondientes.\n\nEn segundo lugar, se menciona que \"En el caso de contrataciones no programadas y, siempre que la necesidad esté incluida en el CMN respectivo, la DEC efectúa la segmentación de la contratación luego de la recepción del requerimiento\". Esto significa que si hay contrataciones no programadas y la necesidad está incluida en el Convenio Marco Nacional (CMN), entonces la DEC realizará la segmentación de la contratación después de recibir el requerimiento.\n\nEstos pasos permiten a las",
+      "abstained": false,
+      "top_similarity": 0.7594,
+      "citations": [
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 42",
+          "section": "DISPOSICIONES COMPLEMENTARIAS FINALES",
+          "version_label": "D.S. 001-2026-EF, publicado 2026-01-08",
+          "page": 14,
+          "similarity": 0.7594
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 42",
+          "section": null,
+          "version_label": "D.S. 001-2026-EF, publicado 2026-01-08",
+          "page": 2,
+          "similarity": 0.7214
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 125",
+          "section": null,
+          "version_label": "D.S. 001-2026-EF, publicado 2026-01-08",
+          "page": 6,
+          "similarity": 0.7012
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 34",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 26,
+          "similarity": 0.6713
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 153",
+          "section": null,
+          "version_label": "D.S. 001-2026-EF, publicado 2026-01-08",
+          "page": 6,
+          "similarity": 0.6421
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_s": 58.65
+    },
+    {
+      "id": 12,
+      "domain": "in_domain",
+      "question": "¿Ante quien se eleva el pliego de absolucion de consultas y observaciones segun la modificacion del D.S. 001-2026-EF?",
+      "expected_doc_id": "ds_001_2026_ef",
+      "expected_unit_label": "Artículo 67",
+      "engine_answer": "Según la modificación del D.S. 001-2026-EF, el pliego de absoluciones de consultas y observaciones se eleva ante la entidad contratante al OECE a través de la Pladicop.",
+      "abstained": false,
+      "top_similarity": 0.6562,
+      "citations": [
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 67",
+          "section": null,
+          "version_label": "D.S. 001-2026-EF, publicado 2026-01-08",
+          "page": 3,
+          "similarity": 0.6562
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_s": 13.27
+    },
+    {
+      "id": 13,
+      "domain": "in_domain",
+      "question": "Segun el D.S. 001-2026-EF, si la parte perjudicada por la resolucion del contrato es la entidad contratante, ¿que puede hacer?",
+      "expected_doc_id": "ds_001_2026_ef",
+      "expected_unit_label": "Artículo 123",
+      "engine_answer": "Según el D.S. 001-2026-EF, si la parte perjudicada por la resolución del contrato es la entidad contratante, puede:\n\n- Someterte a los mecanismos de solución de controversias o\n- Firmar la resolución en vía conciliatoria o arbitral.\n\nEstas opciones están contempladas en los puntos k) y l) del artículo 87.2 del texto consolidado mencionado anteriormente.",
+      "abstained": false,
+      "top_similarity": 0.7572,
+      "citations": [
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 63",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 43,
+          "similarity": 0.7572
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 87",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 62,
+          "similarity": 0.747
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 229",
+          "section": null,
+          "version_label": "D.S. 001-2026-EF, publicado 2026-01-08",
+          "page": 10,
+          "similarity": 0.7405
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 66",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 45,
+          "similarity": 0.7349
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 78",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 56,
+          "similarity": 0.7284
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_s": 23.42
+    },
+    {
+      "id": 14,
+      "domain": "in_domain",
+      "question": "¿En que caso puede la entidad contratante inaplicar temporalmente un impedimento por una contratacion complementaria, segun el D.S. 001-2026-EF?",
+      "expected_doc_id": "ds_001_2026_ef",
+      "expected_unit_label": "Artículo 40",
+      "engine_answer": "Según el artículo 40.4 del D.S. 001-2026-EF, la entidad contratante puede aplicar temporalmente un impedimento para contratar al contratista en caso requerido para realizar una contratación complementaria, bajo las mismas condiciones previstas en el literal b) del numeral 40.2.",
+      "abstained": false,
+      "top_similarity": 0.7795,
+      "citations": [
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 40",
+          "section": null,
+          "version_label": "D.S. 001-2026-EF, publicado 2026-01-08",
+          "page": 2,
+          "similarity": 0.7795
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 86",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 62,
+          "similarity": 0.7143
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 34",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 26,
+          "similarity": 0.6966
+        },
+        {
+          "doc_id": "ley_32069",
+          "unit_label": "Artículo 66",
+          "section": null,
+          "version_label": "Texto consolidado, publicado 2024-06-24",
+          "page": 45,
+          "similarity": 0.6932
+        },
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 286",
+          "section": null,
+          "version_label": "D.S. 001-2026-EF, publicado 2026-01-08",
+          "page": 10,
+          "similarity": 0.6924
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_s": 18.33
+    },
+    {
+      "id": 15,
+      "domain": "in_domain",
+      "question": "¿Que informacion se considera para valorar el desempeño (reputacion) de los proveedores segun el D.S. 001-2026-EF?",
+      "expected_doc_id": "ds_001_2026_ef",
+      "expected_unit_label": "Artículo 37",
+      "engine_answer": "Según el artículo 37.3 del D.S. 001-2026-EF, las siguientes son las formas de información que se considera para la valoración del desempeño de los proveedores:\n\nb) Cumplimiento de plazos de entrega de contrataciones de bienes, servicios y obras: considera la ratio de cumplimiento del proveedor, teniendo en cuenta el número de penalidades por mora impuestas respecto al número de contratos suscritos por el proveedor con entidades contratantes que cuenten con conformidad.",
+      "abstained": false,
+      "top_similarity": 0.6595,
+      "citations": [
+        {
+          "doc_id": "ds_001_2026_ef",
+          "unit_label": "Artículo 37",
+          "section": null,
+          "version_label": "D.S. 001-2026-EF, publicado 2026-01-08",
+          "page": 2,
+          "similarity": 0.6595
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_s": 21.67
+    },
+    {
+      "id": 16,
+      "domain": "out_of_domain",
+      "question": "¿Cuales son las causales de despido justificado en el regimen laboral privado peruano?",
+      "expected_doc_id": null,
+      "expected_unit_label": null,
+      "engine_answer": "No tengo informacion suficiente en el corpus indexado para responder esto con certeza.",
+      "abstained": true,
+      "top_similarity": 0.7152,
+      "citations": [],
+      "cost_usd": 0.0,
+      "latency_s": 11.01
+    },
+    {
+      "id": 17,
+      "domain": "out_of_domain",
+      "question": "¿Cual es la tasa actual del Impuesto General a las Ventas (IGV) en Peru?",
+      "expected_doc_id": null,
+      "expected_unit_label": null,
+      "engine_answer": "No tengo informacion suficiente en el corpus indexado (Ley 32069 y D.S. 001-2026-EF) para responder esto con certeza. Puede estar fuera del alcance de estos dos documentos.",
+      "abstained": true,
+      "top_similarity": 0.6354,
+      "citations": [],
+      "cost_usd": 0.0,
+      "latency_s": 0.07
+    },
+    {
+      "id": 18,
+      "domain": "out_of_domain",
+      "question": "¿Como se calcula la Compensacion por Tiempo de Servicios (CTS) de un trabajador?",
+      "expected_doc_id": null,
+      "expected_unit_label": null,
+      "engine_answer": "No tengo informacion suficiente en el corpus indexado (Ley 32069 y D.S. 001-2026-EF) para responder esto con certeza. Puede estar fuera del alcance de estos dos documentos.",
+      "abstained": true,
+      "top_similarity": 0.6229,
+      "citations": [],
+      "cost_usd": 0.0,
+      "latency_s": 0.03
+    },
+    {
+      "id": 19,
+      "domain": "out_of_domain",
+      "question": "¿Que requisitos exige la Ley General de Sociedades para constituir una empresa en Peru?",
+      "expected_doc_id": null,
+      "expected_unit_label": null,
+      "engine_answer": "No tengo informacion suficiente en el corpus indexado para responder esto con certeza.",
+      "abstained": true,
+      "top_similarity": 0.7889,
+      "citations": [],
+      "cost_usd": 0.0,
+      "latency_s": 8.3
+    },
+    {
+      "id": 20,
+      "domain": "out_of_domain",
+      "question": "¿Cuales son los plazos de prescripcion de un delito tributario en el Codigo Tributario peruano?",
+      "expected_doc_id": null,
+      "expected_unit_label": null,
+      "engine_answer": "No tengo informacion suficiente en el corpus indexado para responder esto con certeza.",
+      "abstained": true,
+      "top_similarity": 0.7225,
+      "citations": [],
+      "cost_usd": 0.0,
+      "latency_s": 5.47
+    }
+  ]
+}

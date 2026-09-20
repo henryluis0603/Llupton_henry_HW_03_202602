@@ -1,0 +1,10 @@
+pdfplumber
+pandas
+numpy
+pyyaml
+python-dotenv
+sentence-transformers
+torch
+transformers
+streamlit
+plotly

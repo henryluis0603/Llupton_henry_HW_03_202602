@@ -1,0 +1,42 @@
+# Configuracion de la Tarea 1 (RAG normativo). Externalizada segun lo pedido
+# en el enunciado: nada de credenciales aqui (esas van en .env).
+
+sources:
+  - doc_id: ley_32069
+    file: data/raw/ley_32069_congreso.pdf
+    version_label: "Texto consolidado, publicado 2024-06-24"
+    two_column: false
+  - doc_id: ds_001_2026_ef
+    file: data/raw/ds_001_2026_ef_construccion_org.pdf
+    version_label: "D.S. 001-2026-EF, publicado 2026-01-08"
+    two_column: true
+
+chunking:
+  # Calibrado con evidencia real: distribucion de longitud de las 260
+  # unidades legales (articulos + disposiciones) de ambos documentos.
+  # 2200 chars deja intacto (sin sub-dividir) al 87.7% de esas unidades;
+  # ver docs/fase2_chunking.md para el detalle y las alternativas probadas.
+  chunk_size_chars: 2200
+  chunk_overlap_chars: 300
+
+embeddings:
+  primary: local
+  local_model: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+  openai_model: "text-embedding-3-small"  # solo si OPENAI_API_KEY esta seteada
+
+generation:
+  # Qwen2.5-1.5B-Instruct: probado en esta maquina (CPU/MPS, 17GB RAM),
+  # responde en espanol correctamente en ~3s por consulta. Ver docs/fase3_engine.md.
+  provider: huggingface_local
+  local_model: "Qwen/Qwen2.5-1.5B-Instruct"
+  openai_model: "gpt-4o-mini"  # opcional, solo si hay API key
+
+engine:
+  # Calibrado en Fase 4 con el set de 20 preguntas (eval/run_eval.py):
+  # 0.64 es el umbral que maximiza (in_domain respondidas correctamente +
+  # out_of_domain correctamente abstenidas) sobre la grilla 0.30-0.90.
+  # LIMITACION REAL Y DOCUMENTADA: a este umbral, solo 2 de 5 preguntas
+  # fuera de dominio son detectadas por similitud sola (abstention_rate=0.4).
+  # Ver docs/fase4_evaluacion.md para el analisis completo y la mitigacion
+  # de segunda capa (instruccion de rechazo en el prompt de generacion).
+  similarity_threshold: 0.64

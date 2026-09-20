@@ -1,0 +1,7 @@
+{
+  "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "embedding_dim": 384,
+  "n_chunks_total": 307,
+  "n_chunks_newly_embedded": 0,
+  "n_chunks_reused_from_previous_index": 307
+}

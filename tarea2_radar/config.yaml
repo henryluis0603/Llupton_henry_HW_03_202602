@@ -1,0 +1,17 @@
+# Configuracion de la Tarea 2 (Radar de contrataciones).
+
+acquisition:
+  source_api: "https://contratacionesabiertas.oece.gob.pe/api/v1/files"
+  months_downloaded: ["2026_06", "2026_07", "2026_08"]
+  # Ver docs/tarea2_fase1_adquisicion.md para como se encontro esta API real.
+
+embeddings:
+  local_model: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"  # mismo que Tarea 1
+
+hybrid_engine:
+  # NO se reutilizo el umbral de la Tarea 1 (0.64): no transferible, ver
+  # docs/tarea2_fase3_rag_hibrido.md seccion 3. Recall@5 real = 0.3.
+  similarity_threshold_default: 0.35
+
+risk_indicator:
+  min_processes_for_buyer_ranking: 5

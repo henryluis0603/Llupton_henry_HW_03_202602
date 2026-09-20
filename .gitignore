@@ -1,0 +1,14 @@
+# Entorno y credenciales
+.env
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Streamlit
+.streamlit/
+
+# Sistema
+.DS_Store

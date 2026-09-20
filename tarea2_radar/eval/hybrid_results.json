@@ -1,0 +1,129 @@
+{
+  "recall": {
+    "recall@1": 0.2,
+    "recall@3": 0.2,
+    "recall@5": 0.3
+  },
+  "top_similarity_stats": {
+    "min": 0.4671,
+    "max": 0.6294,
+    "mean": 0.5566
+  },
+  "task1_threshold_transferability": {
+    "threshold_probado": 0.64,
+    "preguntas_que_superan_el_umbral_de_tarea1": "0/10",
+    "conclusion": "NO transferible tal cual"
+  },
+  "per_question": [
+    {
+      "id": 1,
+      "question": "mejoramiento y ampliacion del servicio de agua potable y alcantarillado en la comunidad de Ccahuatura Paruro Cusco",
+      "found_at_rank": null,
+      "top_similarity": 0.5146,
+      "top3_ocids": [
+        "ocds-dgv273-seacev3-1225695",
+        "ocds-dgv273-seacev3-1249078",
+        "ocds-dgv273-seacev3-1234509"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "renovacion de puente en camino vecinal codigo de ruta JU1567 en centro poblado Porvenir Junin",
+      "found_at_rank": null,
+      "top_similarity": 0.4671,
+      "top3_ocids": [
+        "ocds-dgv273-seacev3-1231860",
+        "ocds-dgv273-seacev3-1241642",
+        "ocds-dgv273-seacev3-1234027"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "alquiler de laptops y equipos de impresion multifuncionales",
+      "found_at_rank": 0,
+      "top_similarity": 0.5978,
+      "top3_ocids": [
+        "ocds-dgv273-seacev3-2026-10189-6",
+        "ocds-dgv273-seacev3-2026-2000-23",
+        "ocds-dgv273-seacev3-2026-23-16"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "adquisicion de petroleo diesel para grupos electrogenos y ambulancias de hospital",
+      "found_at_rank": null,
+      "top_similarity": 0.5282,
+      "top3_ocids": [
+        "ocds-dgv273-seacev3-1237834",
+        "ocds-dgv273-seacev3-1240649",
+        "ocds-dgv273-seacev3-1223655"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "traslado aereo en avion ambulancia para pacientes del seguro integral de salud",
+      "found_at_rank": 0,
+      "top_similarity": 0.6294,
+      "top3_ocids": [
+        "ocds-dgv273-seacev3-1230171",
+        "ocds-dgv273-seacev3-1224105",
+        "ocds-dgv273-seacev3-1226672"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "pintura termoplastica y disolvente para obras publicas de una municipalidad",
+      "found_at_rank": null,
+      "top_similarity": 0.5129,
+      "top3_ocids": [
+        "ocds-dgv273-seacev3-1235969",
+        "ocds-dgv273-seacev3-1226731",
+        "ocds-dgv273-seacev3-1232276"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "adquisicion de 10 camionetas para vehiculo de seguridad ciudadana",
+      "found_at_rank": 3,
+      "top_similarity": 0.5516,
+      "top3_ocids": [
+        "ocds-dgv273-seacev3-1229890",
+        "ocds-dgv273-seacev3-1230119",
+        "ocds-dgv273-seacev3-1233924"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "adquisicion de fertilizantes fungicidas y sustratos agricolas para produccion de plantas",
+      "found_at_rank": null,
+      "top_similarity": 0.6282,
+      "top3_ocids": [
+        "ocds-dgv273-seacev3-1230957",
+        "ocds-dgv273-seacev3-1233180",
+        "ocds-dgv273-seacev3-1223033"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "servicio de seguros no personales poliza de incendio y deshonestidad",
+      "found_at_rank": null,
+      "top_similarity": 0.5498,
+      "top3_ocids": [
+        "ocds-dgv273-seacev3-2026-200140-4",
+        "ocds-dgv273-seacev3-1235830",
+        "ocds-dgv273-seacev3-1231074"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "capacitaciones y asistencias tecnicas en el uso de herramientas digitales",
+      "found_at_rank": null,
+      "top_similarity": 0.5867,
+      "top3_ocids": [
+        "ocds-dgv273-seacev3-2026-2383-51",
+        "ocds-dgv273-seacev3-1240703",
+        "ocds-dgv273-seacev3-2026-1998-17"
+      ]
+    }
+  ]
+}

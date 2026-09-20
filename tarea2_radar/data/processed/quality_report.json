@@ -1,0 +1,42 @@
+{
+  "per_month": [
+    {
+      "month": "2026_06",
+      "n_rows_raw": 7303,
+      "n_rows_unique_ocid": 7303,
+      "duplicates_within_month": 0,
+      "missing_amount": 0,
+      "missing_description_and_title": 0,
+      "location_errors_unnormalizable": 0,
+      "encoding_issues": 1828,
+      "recovery_rate": 1.0,
+      "output_file": "data/processed/2026_06_clean.jsonl"
+    },
+    {
+      "month": "2026_07",
+      "n_rows_raw": 6567,
+      "n_rows_unique_ocid": 6567,
+      "duplicates_within_month": 0,
+      "missing_amount": 0,
+      "missing_description_and_title": 0,
+      "location_errors_unnormalizable": 0,
+      "encoding_issues": 1762,
+      "recovery_rate": 1.0,
+      "output_file": "data/processed/2026_07_clean.jsonl"
+    },
+    {
+      "month": "2026_08",
+      "n_rows_raw": 6552,
+      "n_rows_unique_ocid": 6552,
+      "duplicates_within_month": 0,
+      "missing_amount": 0,
+      "missing_description_and_title": 0,
+      "location_errors_unnormalizable": 0,
+      "encoding_issues": 1971,
+      "recovery_rate": 1.0,
+      "output_file": "data/processed/2026_08_clean.jsonl"
+    }
+  ],
+  "n_ocid_appearing_in_multiple_months": 0,
+  "note_cross_month_duplicates": "Un mismo ocid puede aparecer en mas de un archivo mensual porque OCDS republica el proceso completo cada vez que cambia de estado (convocado -> adjudicado -> contratado). No se eliminan automaticamente: se documentan aqui y el dashboard (Fase 4) debe decidir explicitamente si deduplicar quedandose con la version mas reciente por fecha de publicacion."
+}

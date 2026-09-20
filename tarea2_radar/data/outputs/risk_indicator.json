@@ -1,0 +1,230 @@
+{
+  "n_processes_awarded_with_tenderer_count": 13742,
+  "overall_single_bidder_share": 0.1311,
+  "by_department": [
+    {
+      "department": "TUMBES",
+      "n_awarded": 120,
+      "n_single_bidder": 44,
+      "single_bidder_share": 0.3667
+    },
+    {
+      "department": "LIMA",
+      "n_awarded": 3862,
+      "n_single_bidder": 1165,
+      "single_bidder_share": 0.3017
+    },
+    {
+      "department": "AMAZONAS",
+      "n_awarded": 218,
+      "n_single_bidder": 35,
+      "single_bidder_share": 0.1606
+    },
+    {
+      "department": "AREQUIPA",
+      "n_awarded": 545,
+      "n_single_bidder": 80,
+      "single_bidder_share": 0.1468
+    },
+    {
+      "department": "PIURA",
+      "n_awarded": 405,
+      "n_single_bidder": 41,
+      "single_bidder_share": 0.1012
+    },
+    {
+      "department": "LA LIBERTAD",
+      "n_awarded": 484,
+      "n_single_bidder": 49,
+      "single_bidder_share": 0.1012
+    },
+    {
+      "department": "LAMBAYEQUE",
+      "n_awarded": 272,
+      "n_single_bidder": 27,
+      "single_bidder_share": 0.0993
+    },
+    {
+      "department": "CALLAO",
+      "n_awarded": 220,
+      "n_single_bidder": 21,
+      "single_bidder_share": 0.0955
+    },
+    {
+      "department": "LORETO",
+      "n_awarded": 330,
+      "n_single_bidder": 31,
+      "single_bidder_share": 0.0939
+    },
+    {
+      "department": "AYACUCHO",
+      "n_awarded": 440,
+      "n_single_bidder": 34,
+      "single_bidder_share": 0.0773
+    },
+    {
+      "department": "SAN MARTIN",
+      "n_awarded": 242,
+      "n_single_bidder": 16,
+      "single_bidder_share": 0.0661
+    },
+    {
+      "department": "CAJAMARCA",
+      "n_awarded": 594,
+      "n_single_bidder": 39,
+      "single_bidder_share": 0.0657
+    },
+    {
+      "department": "MADRE DE DIOS",
+      "n_awarded": 153,
+      "n_single_bidder": 9,
+      "single_bidder_share": 0.0588
+    },
+    {
+      "department": "PASCO",
+      "n_awarded": 177,
+      "n_single_bidder": 10,
+      "single_bidder_share": 0.0565
+    },
+    {
+      "department": "ICA",
+      "n_awarded": 232,
+      "n_single_bidder": 13,
+      "single_bidder_share": 0.056
+    },
+    {
+      "department": "JUNIN",
+      "n_awarded": 627,
+      "n_single_bidder": 31,
+      "single_bidder_share": 0.0494
+    },
+    {
+      "department": "MOQUEGUA",
+      "n_awarded": 257,
+      "n_single_bidder": 12,
+      "single_bidder_share": 0.0467
+    },
+    {
+      "department": "HUANUCO",
+      "n_awarded": 446,
+      "n_single_bidder": 19,
+      "single_bidder_share": 0.0426
+    },
+    {
+      "department": "ANCASH",
+      "n_awarded": 900,
+      "n_single_bidder": 38,
+      "single_bidder_share": 0.0422
+    },
+    {
+      "department": "TACNA",
+      "n_awarded": 228,
+      "n_single_bidder": 9,
+      "single_bidder_share": 0.0395
+    },
+    {
+      "department": "HUANCAVELICA",
+      "n_awarded": 272,
+      "n_single_bidder": 10,
+      "single_bidder_share": 0.0368
+    },
+    {
+      "department": "UCAYALI",
+      "n_awarded": 278,
+      "n_single_bidder": 10,
+      "single_bidder_share": 0.036
+    },
+    {
+      "department": "PUNO",
+      "n_awarded": 763,
+      "n_single_bidder": 25,
+      "single_bidder_share": 0.0328
+    },
+    {
+      "department": "CUSCO",
+      "n_awarded": 1086,
+      "n_single_bidder": 25,
+      "single_bidder_share": 0.023
+    },
+    {
+      "department": "APURIMAC",
+      "n_awarded": 591,
+      "n_single_bidder": 9,
+      "single_bidder_share": 0.0152
+    }
+  ],
+  "top10_buyers_single_bidder_share": [
+    {
+      "buyer_name": "UNIDAD EJECUTORA 022 \"PROYECTO DE TRANSFORMACIÓN DIGITAL CON EQUIDAD - PROTDE",
+      "department": "LIMA",
+      "n_awarded": 5,
+      "n_single_bidder": 5,
+      "single_bidder_share": 1.0
+    },
+    {
+      "buyer_name": "MINISTERIO DE JUSTICIA Y DERECHOS HUMANOS",
+      "department": "LIMA",
+      "n_awarded": 7,
+      "n_single_bidder": 7,
+      "single_bidder_share": 1.0
+    },
+    {
+      "buyer_name": "FOMENTO Y GESTIÓN SOSTENIBLE DE LA PRODUCCIÓN FORESTAL EN EL PERÚ",
+      "department": "LIMA",
+      "n_awarded": 22,
+      "n_single_bidder": 22,
+      "single_bidder_share": 1.0
+    },
+    {
+      "buyer_name": "GOBIERNO REGIONAL DE ANCASH - DIRECCION DE RED DE SALUD PACIFICO NORTE",
+      "department": "ANCASH",
+      "n_awarded": 11,
+      "n_single_bidder": 11,
+      "single_bidder_share": 1.0
+    },
+    {
+      "buyer_name": "MINAG - PROYECTO ESPECIAL BINACIONAL PUYANGO - TUMBES",
+      "department": "TUMBES",
+      "n_awarded": 6,
+      "n_single_bidder": 6,
+      "single_bidder_share": 1.0
+    },
+    {
+      "buyer_name": "UNIDAD EJECUTORA 002 CONSERVACION DE BOSQUES",
+      "department": "LIMA",
+      "n_awarded": 14,
+      "n_single_bidder": 14,
+      "single_bidder_share": 1.0
+    },
+    {
+      "buyer_name": "ORGANISMO DE EVALUACION Y FISCALIZACION AMBIENTAL",
+      "department": "LIMA",
+      "n_awarded": 174,
+      "n_single_bidder": 166,
+      "single_bidder_share": 0.954
+    },
+    {
+      "buyer_name": "INSTITUTO NACIONAL DE CALIDAD - INACAL",
+      "department": "LIMA",
+      "n_awarded": 7,
+      "n_single_bidder": 6,
+      "single_bidder_share": 0.8571
+    },
+    {
+      "buyer_name": "PROGRAMA SUBSECTORIAL DE IRRIGACIONES - PSI",
+      "department": "LIMA",
+      "n_awarded": 27,
+      "n_single_bidder": 23,
+      "single_bidder_share": 0.8519
+    },
+    {
+      "buyer_name": "MINISTERIO DE RELACIONES EXTERIORES",
+      "department": "LIMA",
+      "n_awarded": 56,
+      "n_single_bidder": 47,
+      "single_bidder_share": 0.8393
+    }
+  ],
+  "min_processes_threshold_for_buyer_ranking": 5,
+  "advertencia": "Este indicador senala la necesidad de investigar, no prueba irregularidad. Un porcentaje alto de postor unico puede deberse a mercados de proveedores pequenos (zonas rurales, bienes/servicios especializados)."
+}

@@ -1,0 +1,15 @@
+{
+  "_nota": "10 preguntas construidas a partir de titulos/descripciones reales verificados con codigo (no de memoria) en data/processed/*_clean.jsonl (junio-agosto 2026). Varias tienen mas de un ocid valido porque el mismo proceso plantilla se republica en distintos meses o hay procesos gemelos legitimos (ej. obra + su supervision) -- se acepta cualquiera de la lista `expected_ocids` como acierto, en vez de forzar una unicidad artificial que los datos reales no tienen.",
+  "questions": [
+    {"id": 1, "question": "mejoramiento y ampliacion del servicio de agua potable y alcantarillado en la comunidad de Ccahuatura Paruro Cusco", "filters": {"department": "CUSCO"}, "expected_ocids": ["ocds-dgv273-seacev3-1226474", "ocds-dgv273-seacev3-2026-830-3"]},
+    {"id": 2, "question": "renovacion de puente en camino vecinal codigo de ruta JU1567 en centro poblado Porvenir Junin", "filters": {"department": "JUNIN"}, "expected_ocids": ["ocds-dgv273-seacev3-1251151", "ocds-dgv273-seacev3-1226188", "ocds-dgv273-seacev3-1235991", "ocds-dgv273-seacev3-1245401"]},
+    {"id": 3, "question": "alquiler de laptops y equipos de impresion multifuncionales", "filters": {"department": "LIMA", "category": "services"}, "expected_ocids": ["ocds-dgv273-seacev3-2026-10189-6"]},
+    {"id": 4, "question": "adquisicion de petroleo diesel para grupos electrogenos y ambulancias de hospital", "filters": {"department": "PASCO"}, "expected_ocids": ["ocds-dgv273-seacev3-2026-10549-1"]},
+    {"id": 5, "question": "traslado aereo en avion ambulancia para pacientes del seguro integral de salud", "filters": {"department": "AYACUCHO"}, "expected_ocids": ["ocds-dgv273-seacev3-1226672", "ocds-dgv273-seacev3-1224105", "ocds-dgv273-seacev3-1230171"]},
+    {"id": 6, "question": "pintura termoplastica y disolvente para obras publicas de una municipalidad", "filters": {"department": "LIMA", "category": "goods"}, "expected_ocids": ["ocds-dgv273-seacev3-1228790"]},
+    {"id": 7, "question": "adquisicion de 10 camionetas para vehiculo de seguridad ciudadana", "filters": {"department": "PUNO"}, "expected_ocids": ["ocds-dgv273-seacev3-1226492"]},
+    {"id": 8, "question": "adquisicion de fertilizantes fungicidas y sustratos agricolas para produccion de plantas", "filters": {"department": "LIMA"}, "expected_ocids": ["ocds-dgv273-seacev3-1223625"]},
+    {"id": 9, "question": "servicio de seguros no personales poliza de incendio y deshonestidad", "filters": {"department": "LIMA", "category": "services"}, "expected_ocids": ["ocds-dgv273-seacev3-1227310"]},
+    {"id": 10, "question": "capacitaciones y asistencias tecnicas en el uso de herramientas digitales", "filters": {"department": "LIMA"}, "expected_ocids": ["ocds-dgv273-seacev3-2026-200016-10"]}
+  ]
+}

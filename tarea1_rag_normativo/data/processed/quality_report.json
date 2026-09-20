@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "doc_id": "ley_32069",
+      "source_file": "ley_32069_congreso.pdf",
+      "version_label": "Texto consolidado, publicado 2024-06-24 (Congreso de la Republica)",
+      "two_column": false,
+      "n_pages": 91,
+      "empty_or_near_empty_pages": [],
+      "min_chars_per_page": 810,
+      "max_chars_per_page": 2718,
+      "avg_chars_per_page": 2220.4,
+      "output_file": "data/processed/ley_32069.jsonl"
+    },
+    {
+      "doc_id": "ds_001_2026_ef",
+      "source_file": "ds_001_2026_ef_construccion_org.pdf",
+      "version_label": "D.S. N.deg 001-2026-EF, publicado 2026-01-08 (El Peruano)",
+      "two_column": true,
+      "n_pages": 16,
+      "empty_or_near_empty_pages": [],
+      "min_chars_per_page": 6275,
+      "max_chars_per_page": 7845,
+      "avg_chars_per_page": 6851.6,
+      "output_file": "data/processed/ds_001_2026_ef.jsonl"
+    }
+  ]
+}

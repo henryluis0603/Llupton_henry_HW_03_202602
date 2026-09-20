@@ -1,0 +1,28 @@
+{
+  "chunk_size_chars": 2200,
+  "chunk_overlap_chars": 300,
+  "documents": [
+    {
+      "doc_id": "ley_32069",
+      "n_legal_units": 142,
+      "n_units_split_into_multiple_chunks": 23,
+      "pct_units_intact": 83.8,
+      "n_chunks_final": 178,
+      "min_chunk_chars": 168,
+      "max_chunk_chars": 2199,
+      "avg_chunk_chars": 1193.9,
+      "output_file": "data/processed/ley_32069_chunks.jsonl"
+    },
+    {
+      "doc_id": "ds_001_2026_ef",
+      "n_legal_units": 118,
+      "n_units_split_into_multiple_chunks": 9,
+      "pct_units_intact": 92.4,
+      "n_chunks_final": 129,
+      "min_chunk_chars": 199,
+      "max_chunk_chars": 2199,
+      "avg_chunk_chars": 842.7,
+      "output_file": "data/processed/ds_001_2026_ef_chunks.jsonl"
+    }
+  ]
+}
