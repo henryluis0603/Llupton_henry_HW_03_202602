@@ -778,5 +778,5 @@
       ]
     }
   ],
-  "openai_embeddings_comparison": "NO EJECUTADA: falta OPENAI_API_KEY (ver docs/fase4_evaluacion.md)"
+  "openai_embeddings_comparison": "Ver eval/compare_embeddings.py y eval/embeddings_comparison.json"
 }

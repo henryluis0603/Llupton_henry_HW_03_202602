@@ -44,6 +44,7 @@ import numpy as np
 import yaml
 
 from . import costs
+from . import embeddings as embeddings_module
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 INDEX_DIR = BASE_DIR / "data" / "processed" / "index"
@@ -59,12 +60,10 @@ def _load_state():
     if _STATE:
         return _STATE
     config = _load_config()
-    embeddings = np.load(INDEX_DIR / "embeddings.npy")
+    embeddings_array = np.load(INDEX_DIR / "embeddings.npy")
     metadata = [json.loads(l) for l in (INDEX_DIR / "metadata.jsonl").open(encoding="utf-8")]
 
-    from sentence_transformers import SentenceTransformer
-
-    embed_model = SentenceTransformer(config["embeddings"]["local_model"])
+    embed_backend = embeddings_module.get_backend("local", config["embeddings"]["local_model"])
 
     gen_model_name = config["generation"]["local_model"]
     gen_tokenizer = None
@@ -78,9 +77,9 @@ def _load_state():
 
     _STATE.update(
         config=config,
-        embeddings=embeddings,
+        embeddings=embeddings_array,
         metadata=metadata,
-        embed_model=embed_model,
+        embed_backend=embed_backend,
         gen_model_name=gen_model_name,
         gen_tokenizer=gen_tokenizer,
         gen_model=gen_model,
@@ -90,7 +89,7 @@ def _load_state():
 
 def _retrieve(question: str, top_k: int = 5) -> list[dict]:
     state = _load_state()
-    q_vec = state["embed_model"].encode([question], normalize_embeddings=True)[0]
+    q_vec = state["embed_backend"].encode([question])[0]
     sims = state["embeddings"] @ q_vec
     order = np.argsort(-sims)[:top_k]
     results = []

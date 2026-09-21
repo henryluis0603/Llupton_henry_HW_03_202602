@@ -8,18 +8,15 @@ dependa del modelo de lenguaje ni tome minutos por pregunta):
     in_domain vs. las out_of_domain, que es la evidencia real usada para
     calibrar `engine.similarity_threshold` en config.yaml (Fase 3).
 
-Limitacion declarada explicitamente (no se inventa el dato): la
-comparacion de embeddings "modelo local vs. OpenAI text-embedding-3-small"
-que pide el enunciado NO se pudo ejecutar en este proyecto porque no hay
-una OPENAI_API_KEY configurada (ver docs/fase4_evaluacion.md). El codigo
-para esa comparacion (`compare_with_openai`) esta escrito y listo, pero
-lanza un error explicito si se intenta correr sin la key, en vez de
-simular un resultado.
+La comparacion OBLIGATORIA de embeddings (local vs. OpenAI
+text-embedding-3-small: Recall@k, tiempo de indexacion, costo, latencia,
+dimension) vive en un script aparte: eval/compare_embeddings.py, porque
+es una evaluacion distinta (requiere OPENAI_API_KEY) de la calibracion de
+umbral in_domain/out_of_domain que hace este archivo.
 """
 from __future__ import annotations
 
 import json
-import os
 from pathlib import Path
 
 import numpy as np
@@ -39,16 +36,6 @@ def _retrieve_raw(question: str, embed_model, embeddings, metadata, top_k=5):
     sims = embeddings @ q_vec
     order = np.argsort(-sims)[:top_k]
     return [(metadata[i], float(sims[i])) for i in order]
-
-
-def compare_with_openai(*_args, **_kwargs):
-    if not os.environ.get("OPENAI_API_KEY"):
-        raise RuntimeError(
-            "No hay OPENAI_API_KEY en el entorno. La comparacion de embeddings local vs. "
-            "text-embedding-3-small no se puede ejecutar honestamente sin la key real. "
-            "Ver docs/fase4_evaluacion.md, seccion 'Comparacion de embeddings pendiente'."
-        )
-    raise NotImplementedError("Implementar llamada real a la API de OpenAI cuando se tenga la key.")
 
 
 def main():
@@ -135,7 +122,7 @@ def main():
         "coverage_in_domain_at_threshold": round(coverage_in_domain_at_best, 3),
         "abstention_rate_out_domain_at_threshold": round(abstention_rate_out_domain_at_best, 3),
         "per_question": per_question,
-        "openai_embeddings_comparison": "NO EJECUTADA: falta OPENAI_API_KEY (ver docs/fase4_evaluacion.md)",
+        "openai_embeddings_comparison": "Ver eval/compare_embeddings.py y eval/embeddings_comparison.json",
     }
 
     out_path = BASE_DIR / "eval" / "results.json"
