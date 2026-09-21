@@ -122,12 +122,11 @@ st.plotly_chart(fig_map, use_container_width=True)
 # --- Caja de preguntas (RAG hibrido) ---
 st.subheader("Buscar procesos por descripción (RAG híbrido)")
 st.caption(
-    "Nota de limitación real (ver docs/tarea2_fase3_rag_hibrido.md): el Recall@5 medido en "
-    "evaluación fue de 0.3 (peor que en la Tarea 1). Se muestran 10 resultados, no solo el "
-    "primero, para compensar un ranking semántico imperfecto. **Importante**: escribir un "
-    "departamento en el texto (ej. 'en Cusco') NO filtra los resultados a ese departamento — "
-    "solo influye levemente en el ranking semántico. Para filtrar de verdad por departamento, "
-    "usa el selector de la barra lateral."
+    "Búsqueda semántica + léxica (BM25) combinadas — ver docs/tarea2_fase3_rag_hibrido.md. "
+    "Recall@5 medido en evaluación: 0.8 (mejoró de 0.3 al agregar BM25). **Importante**: escribir "
+    "un departamento en el texto (ej. 'en Cusco') NO filtra los resultados a ese departamento — "
+    "solo influye levemente en el ranking. Para filtrar de verdad por departamento, usa el "
+    "selector de la barra lateral."
 )
 query = st.text_input("Describe lo que buscas (ej. 'obras de agua potable en Cusco'):")
 if query.strip():

@@ -71,10 +71,13 @@ embeddings con OpenAI (pendiente por falta de API key).
 - **Fase 2 (Validación)**: completa. Ver [docs/tarea2_fase2_validacion.md](docs/tarea2_fase2_validacion.md)
   — incluye la corrección de un bug real: la primera versión no detectaba que ~25-30% de las
   filas tienen un carácter `¿` corrupto (sustituto de guion/comilla) en el texto libre.
-- **Fase 3 (RAG híbrido)**: completa, con un hallazgo importante y no resuelto del todo. Ver
-  [docs/tarea2_fase3_rag_hibrido.md](docs/tarea2_fase3_rag_hibrido.md) — Recall@5 = **0.3** (peor
-  que en la Tarea 1), y el umbral calibrado en la Tarea 1 (0.64) **no es transferible** (0/10
-  preguntas lo superan). Se documenta la hipótesis de causa raíz y se deja como trabajo futuro.
+- **Fase 3 (RAG híbrido)**: completa. Primer intento (solo semántico): Recall@5 = 0.3, peor que
+  la Tarea 1, con casos de falla evidentes (buscar "agua potable" devolvía un proyecto de
+  canchas deportivas). Se diagnosticó la causa (texto administrativo con códigos/siglas, mal
+  servido por embeddings genéricos) y se corrigió agregando fusión con BM25 (léxico): **Recall@5
+  subió a 0.8**, verificado también cualitativamente (el caso de las canchas deportivas ya no
+  aparece). El umbral de la Tarea 1 (0.64) sigue sin ser transferible directamente (se usa RRF,
+  no similitud pura, para el ranking). Ver [docs/tarea2_fase3_rag_hibrido.md](docs/tarea2_fase3_rag_hibrido.md).
 - **Fase 4 (Dashboard)**: probado en vivo con el usuario (2 rondas). Ver
   [docs/tarea2_fase4_dashboard.md](docs/tarea2_fase4_dashboard.md) — 3 problemas reales
   encontrados y resueltos: 2 de codificación en los datos fuente (ver Fase 2) y 1 de

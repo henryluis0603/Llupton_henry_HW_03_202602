@@ -1,20 +1,162 @@
 {
-  "recall": {
-    "recall@1": 0.2,
-    "recall@3": 0.2,
-    "recall@5": 0.3
+  "comparacion_recall": {
+    "solo_semantico": {
+      "recall@1": 0.2,
+      "recall@3": 0.2,
+      "recall@5": 0.3
+    },
+    "semantico_mas_bm25": {
+      "recall@1": 0.5,
+      "recall@3": 0.8,
+      "recall@5": 0.8
+    }
   },
-  "top_similarity_stats": {
-    "min": 0.4671,
-    "max": 0.6294,
-    "mean": 0.5566
+  "solo_semantico": {
+    "recall": {
+      "recall@1": 0.2,
+      "recall@3": 0.2,
+      "recall@5": 0.3
+    },
+    "top_similarity_stats": {
+      "min": 0.4671,
+      "max": 0.6294,
+      "mean": 0.5566
+    },
+    "n_above_task1_threshold": 0,
+    "n_questions": 10
+  },
+  "semantico_mas_bm25": {
+    "recall": {
+      "recall@1": 0.5,
+      "recall@3": 0.8,
+      "recall@5": 0.8
+    },
+    "top_similarity_stats": {
+      "min": 0.3735,
+      "max": 0.6183,
+      "mean": 0.5124
+    },
+    "n_above_task1_threshold": 0,
+    "n_questions": 10
   },
   "task1_threshold_transferability": {
     "threshold_probado": 0.64,
     "preguntas_que_superan_el_umbral_de_tarea1": "0/10",
     "conclusion": "NO transferible tal cual"
   },
-  "per_question": [
+  "per_question_semantico_mas_bm25": [
+    {
+      "id": 1,
+      "question": "mejoramiento y ampliacion del servicio de agua potable y alcantarillado en la comunidad de Ccahuatura Paruro Cusco",
+      "found_at_rank": null,
+      "top_similarity": 0.5082,
+      "top3_ocids": [
+        "ocds-dgv273-seacev3-1221414",
+        "ocds-dgv273-seacev3-1221028",
+        "ocds-dgv273-seacev3-1232885"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "renovacion de puente en camino vecinal codigo de ruta JU1567 en centro poblado Porvenir Junin",
+      "found_at_rank": 0,
+      "top_similarity": 0.3735,
+      "top3_ocids": [
+        "ocds-dgv273-seacev3-1245401",
+        "ocds-dgv273-seacev3-1235991",
+        "ocds-dgv273-seacev3-1251151"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "alquiler de laptops y equipos de impresion multifuncionales",
+      "found_at_rank": 0,
+      "top_similarity": 0.5978,
+      "top3_ocids": [
+        "ocds-dgv273-seacev3-2026-10189-6",
+        "ocds-dgv273-seacev3-2026-2383-51",
+        "ocds-dgv273-seacev3-2026-1922-135"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "adquisicion de petroleo diesel para grupos electrogenos y ambulancias de hospital",
+      "found_at_rank": 1,
+      "top_similarity": 0.5282,
+      "top3_ocids": [
+        "ocds-dgv273-seacev3-1237834",
+        "ocds-dgv273-seacev3-2026-10549-1",
+        "ocds-dgv273-seacev3-1230653"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "traslado aereo en avion ambulancia para pacientes del seguro integral de salud",
+      "found_at_rank": 0,
+      "top_similarity": 0.6183,
+      "top3_ocids": [
+        "ocds-dgv273-seacev3-1224105",
+        "ocds-dgv273-seacev3-1230171",
+        "ocds-dgv273-seacev3-1226672"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "pintura termoplastica y disolvente para obras publicas de una municipalidad",
+      "found_at_rank": 1,
+      "top_similarity": 0.4701,
+      "top3_ocids": [
+        "ocds-dgv273-seacev3-1222226",
+        "ocds-dgv273-seacev3-1228790",
+        "ocds-dgv273-seacev3-1237622"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "adquisicion de 10 camionetas para vehiculo de seguridad ciudadana",
+      "found_at_rank": 0,
+      "top_similarity": 0.4557,
+      "top3_ocids": [
+        "ocds-dgv273-seacev3-1226492",
+        "ocds-dgv273-seacev3-1229890",
+        "ocds-dgv273-seacev3-1243359"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "adquisicion de fertilizantes fungicidas y sustratos agricolas para produccion de plantas",
+      "found_at_rank": 0,
+      "top_similarity": 0.4696,
+      "top3_ocids": [
+        "ocds-dgv273-seacev3-1223625",
+        "ocds-dgv273-seacev3-1237378",
+        "ocds-dgv273-seacev3-1243456"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "servicio de seguros no personales poliza de incendio y deshonestidad",
+      "found_at_rank": null,
+      "top_similarity": 0.5498,
+      "top3_ocids": [
+        "ocds-dgv273-seacev3-2026-200140-4",
+        "ocds-dgv273-seacev3-2026-11-15",
+        "ocds-dgv273-seacev3-2026-11-16"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "capacitaciones y asistencias tecnicas en el uso de herramientas digitales",
+      "found_at_rank": 2,
+      "top_similarity": 0.5527,
+      "top3_ocids": [
+        "ocds-dgv273-seacev3-2026-1998-17",
+        "ocds-dgv273-seacev3-1240285",
+        "ocds-dgv273-seacev3-2026-200016-10"
+      ]
+    }
+  ],
+  "per_question_solo_semantico": [
     {
       "id": 1,
       "question": "mejoramiento y ampliacion del servicio de agua potable y alcantarillado en la comunidad de Ccahuatura Paruro Cusco",

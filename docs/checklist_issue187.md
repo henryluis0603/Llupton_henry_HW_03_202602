@@ -94,14 +94,17 @@ mención inventada a "Chile") probando la app en vivo con el usuario — ver `do
       el usuario, corregido con certeza (sin ambigüedad, a diferencia del caso 1). Ver
       `docs/tarea2_fase2_validacion.md`.
 
-### Fase 3 — RAG híbrido (1.5 pts) ⚠️
+### Fase 3 — RAG híbrido (1.5 pts) ✅
 
 - [x] Índice de descripciones de procesos + filtros estructurados (departamento, categoría,
       monto, fecha) aplicados antes de la búsqueda semántica.
 - [x] Evaluación con 10 preguntas de relevancia conocida (`eval/hybrid_questions.json`).
-- [x] Prueba de transferibilidad del umbral de la Tarea 1: **NO transferible** (0/10 lo superan).
-- ⚠️ **Recall@5 = 0.3 (limitación real, no resuelta a fondo por tiempo)** — documentado con
-      hipótesis de causa raíz y recomendaciones en `docs/tarea2_fase3_rag_hibrido.md`.
+- [x] Prueba de transferibilidad del umbral de la Tarea 1: **NO transferible** (0/10 lo superan;
+      el ranking final usa RRF, no similitud pura).
+- [x] **Recall@5 mejorado de 0.3 a 0.8** agregando fusión con BM25 (léxico) sobre el ranking
+      semántico — diagnóstico, implementación y medición antes/después en
+      `docs/tarea2_fase3_rag_hibrido.md`. Verificado también cualitativamente (el caso de
+      "agua potable" que devolvía canchas deportivas ya no ocurre).
 
 ### Fase 4 — Dashboard (1.5 pts) ✅
 
@@ -157,8 +160,9 @@ mención inventada a "Chile") probando la app en vivo con el usuario — ver `do
 
 - ❌ Bot de Telegram (Tarea 1).
 - ❌ Workflow de evaluación en GitHub Actions (Tarea 1).
-- ❌ Comparación con BM25 (Tarea 1) — **recomendado especialmente para la Tarea 2**, ya que
-      podría mitigar el problema de Recall@5=0.3 encontrado en el RAG híbrido.
+- ⚠️ Comparación con BM25 (Tarea 1): no implementada para la Tarea 1 (texto legal), pero **sí se
+      implementó para la Tarea 2** (fusión semántica+BM25 en el RAG híbrido, ver Fase 3 arriba) —
+      ahí es donde realmente hacía falta y mejoró el Recall@5 de 0.3 a 0.8.
 - ❌ Despliegue público (Tarea 1).
 - ❌ Actualización programada vía API (Tarea 2) — la base ya existe en `src/acquisition.py`,
       faltaría solo un cron/scheduler.

@@ -4,6 +4,7 @@ numpy
 pyyaml
 python-dotenv
 sentence-transformers
+rank_bm25
 torch
 transformers
 streamlit
