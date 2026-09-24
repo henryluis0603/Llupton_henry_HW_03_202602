@@ -10,9 +10,13 @@
 
 ## 2. Por qué Hugging Face local y no OpenAI
 
-No se dispone de una `OPENAI_API_KEY` en este proyecto (decisión tomada con el usuario el
-2026-09-20, ver memoria del proyecto). Se probaron y confirmaron en esta máquina (CPU/MPS,
-17GB RAM):
+Al momento de construir el motor (2026-09-20) no se disponía de una `OPENAI_API_KEY`, así que se
+optó por modelos 100% locales. **Actualización 2026-09-23**: se consiguió una key y se ejecutó la
+comparación obligatoria de embeddings (ver `docs/fase4_evaluacion.md`, sección 4); se decidió
+mantener el modelo local como predeterminado incluso con la key disponible, por costo, latencia e
+independencia de un tercero — no por falta de acceso. La generación (LLM que redacta la
+respuesta) sigue siendo local porque el enunciado no exige comparar modelos de generación, solo
+de embeddings. Se probaron y confirmaron en esta máquina (CPU/MPS, 17GB RAM):
 
 - **Embeddings**: `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` (384 dim,
   multilingüe, incluye español).

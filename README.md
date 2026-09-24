@@ -3,11 +3,10 @@
 Proyecto integrador para el curso de Ciencia de Datos con Python (d2cml-ai).
 Enunciado completo: [issue #187](https://github.com/d2cml-ai/Data-Science-Python/issues/187).
 
-**Estado**: las 10 fases (5 por tarea) están implementadas y documentadas. Ver
-**[docs/checklist_issue187.md](docs/checklist_issue187.md) — checklist punto por punto de todo
-lo que pide el issue**, con lo hecho, lo limitado y lo pendiente (video, comparación con OpenAI).
-Ver también los diagramas de pipeline: [Tarea 1](docs/pipeline_tarea1.md) ·
-[Tarea 2](docs/pipeline_tarea2.md).
+**Estado**: las 10 fases (5 por tarea) están implementadas, documentadas y probadas con datos/APIs
+reales. Único pendiente: el video. Ver **[docs/checklist_issue187.md](docs/checklist_issue187.md)
+— checklist punto por punto de todo lo que pide el issue**. Diagramas de pipeline:
+[Tarea 1](docs/pipeline_tarea1.md) · [Tarea 2](docs/pipeline_tarea2.md).
 
 ## Estructura
 
@@ -18,11 +17,13 @@ Ver también los diagramas de pipeline: [Tarea 1](docs/pipeline_tarea1.md) ·
 │   ├── src/
 │   │   ├── extraction.py         # Fase 1
 │   │   ├── chunking.py           # Fase 2
+│   │   ├── embeddings.py         # interfaz comun local/OpenAI (Fase 3/4)
 │   │   ├── build_index.py        # Fase 3 (offline)
 │   │   ├── engine.py             # Fase 3 (online) — answer_query()
-│   │   └── costs.py              # logging de costos
-│   ├── eval/                     # Fase 4: preguntas + resultados
-│   ├── data/{raw,processed}/
+│   │   ├── costs.py              # logging de costos
+│   │   └── secrets_store.py      # API key: .env o llavero del sistema
+│   ├── eval/                     # Fase 4: preguntas, resultados, comparacion embeddings
+│   ├── data/{raw,processed}/     # incluye index/ (local) e index_openai/
 │   └── logs/cost_log.jsonl
 ├── tarea2_radar/
 │   ├── config.yaml
@@ -89,8 +90,8 @@ Ver también los diagramas de pipeline: [Tarea 1](docs/pipeline_tarea1.md) ·
   — tasa global de postor único 13.1% sobre 13,742 adjudicaciones reales; caso destacado: OEFA
   con 95.4% de postor único en 174 adjudicaciones.
 
-**Tarea 2 completa** (las 5 fases), con la salvedad de que la calidad del RAG híbrido (Fase 3)
-quedó documentada como una limitación real, no resuelta a fondo por tiempo.
+**Tarea 2 100% completa**, las 5 fases sin salvedades pendientes (el RAG híbrido pasó de una
+limitación real de Recall@5=0.3 a 0.8 tras diagnosticar y corregir la causa con BM25).
 
 ## Cómo correr lo que existe hasta ahora
 
@@ -103,6 +104,7 @@ python3 src/extraction.py   # Fase 1
 python3 src/chunking.py     # Fase 2
 python3 src/build_index.py  # Fase 3 (offline, descarga el modelo de embeddings la primera vez)
 python3 eval/run_eval.py    # Fase 4 (recall + calibración de umbral, solo retrieval)
+python3 eval/compare_embeddings.py  # Fase 4 (requiere OPENAI_API_KEY en .env o llavero)
 streamlit run app.py        # Fase 5
 
 # Tarea 2

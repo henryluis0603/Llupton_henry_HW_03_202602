@@ -114,8 +114,9 @@ mención inventada a "Chile") probando la app en vivo con el usuario — ver `do
       de preguntas, tabla clasificada, gráficos de distribución, panel de calidad.
 - [x] Filtros de sidebar: departamento, categoría, rango de monto, fecha, similitud.
 - [x] Lectura de archivos precomputados (no recalcula validación/índice/riesgo al abrir).
-- [x] Probado con lógica ejecutada directamente en Python (sin errores) — **pendiente que el
-      usuario confirme visualmente en el navegador** (`http://localhost:8502`).
+- [x] Probado en el navegador por el usuario en 2 rondas con capturas reales (`localhost:8502`),
+      además de verificado en Python sin errores. 3 problemas reales encontrados y corregidos en
+      esas pruebas (ver Fase 2 y `docs/tarea2_fase4_dashboard.md`).
 
 ### Fase 5 — Indicador de riesgo (0.5 pts) ✅
 
