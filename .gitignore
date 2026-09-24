@@ -12,3 +12,6 @@ __pycache__/
 
 # Sistema
 .DS_Store
+
+# Guion de video (no versionado)
+docs/guion_video.md
