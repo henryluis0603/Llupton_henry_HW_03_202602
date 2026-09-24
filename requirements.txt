@@ -3,6 +3,7 @@ pandas
 numpy
 pyyaml
 python-dotenv
+keyring
 sentence-transformers
 openai
 rank_bm25

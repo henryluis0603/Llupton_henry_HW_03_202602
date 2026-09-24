@@ -8,9 +8,9 @@ listo para similitud coseno via producto punto).
 """
 from __future__ import annotations
 
-import os
-
 import numpy as np
+
+from .secrets_store import get_openai_api_key
 
 
 class LocalEmbeddingBackend:
@@ -30,18 +30,21 @@ class LocalEmbeddingBackend:
 
 
 class OpenAIEmbeddingBackend:
-    """Cliente real de la API de OpenAI. Requiere OPENAI_API_KEY en el
-    entorno (ver .env.example). No hay fallback simulado: si la key no
-    esta, se lanza un error explicito en vez de inventar un resultado."""
+    """Cliente real de la API de OpenAI. Requiere la key en el entorno
+    (.env) o en el llavero del sistema (ver src/secrets_store.py -- mas
+    seguro, la key nunca toca un archivo de texto plano). No hay fallback
+    simulado: si la key no esta en ningun lado, se lanza un error
+    explicito en vez de inventar un resultado."""
 
     _DIMENSIONS = {"text-embedding-3-small": 1536}
 
     def __init__(self, model_name: str = "text-embedding-3-small"):
-        api_key = os.environ.get("OPENAI_API_KEY")
+        api_key = get_openai_api_key()
         if not api_key:
             raise RuntimeError(
-                "OPENAI_API_KEY no esta configurada. Copiar .env.example a .env y completar "
-                "la key (nunca pegarla en el codigo ni en el chat)."
+                "No se encontro OPENAI_API_KEY ni en el entorno/.env ni en el llavero del "
+                "sistema. Ver src/secrets_store.py para las dos formas de configurarla "
+                "(nunca pegarla en el codigo ni en el chat)."
             )
         from openai import OpenAI
 
