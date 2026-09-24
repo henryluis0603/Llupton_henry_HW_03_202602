@@ -49,16 +49,18 @@ mención inventada a "Chile") probando la app en vivo con el usuario — ver `do
 - [x] Proceso offline (`build_index.py`) y online (`engine.py`) separados, función única
       `answer_query()` con salida estructurada.
 
-### Fase 4 — Evaluación (1.5 pts) ⚠️
+### Fase 4 — Evaluación (1.5 pts) ✅
 
 - [x] Set de 20 preguntas (15 dentro de dominio, 5 fuera) — `eval/questions.json`.
 - [x] Recall@1/3/5 (0.667 / 0.800 / 0.800) y tasa de abstención (100% combinada, ver
       `docs/fase4_evaluacion.md`).
-- ⚠️ **Comparación de embeddings local vs. OpenAI `text-embedding-3-small`: NO ejecutada.**
-      Bloqueada por falta de `OPENAI_API_KEY`. Código listo en
-      `eval/run_eval.py::compare_with_openai`, lanza error explícito en vez de simular un
-      resultado. **Se resuelve si consigues una key y me la compartes vía `.env` (nunca en el
-      chat) antes de la entrega.**
+- [x] **Comparación de embeddings local vs. OpenAI `text-embedding-3-small`: ejecutada el
+      2026-09-23** (`eval/compare_embeddings.py`), dos índices completos sobre los mismos 307
+      fragmentos. OpenAI: Recall@1/3/5 = 0.8/1.0/1.0, dim 1536, latencia 0.61s/consulta, costo
+      total $0.0017. Local: 0.667/0.8/0.8, dim 384, latencia 0.032s/consulta, costo $0. Respuesta
+      justificada de "cuál elegirías y por qué" en `docs/fase4_evaluacion.md` sección 4 (se
+      mantiene local por costo/latencia/independencia de terceros, documentando que OpenAI
+      ganaría en un escenario de producción real donde el recall pesa más).
 
 ### Fase 5 — Interfaz Streamlit (1.0 pt) ✅
 
@@ -149,7 +151,7 @@ mención inventada a "Chile") probando la app en vivo con el usuario — ver `do
 - [x] Tabla de verificación de fuentes (Tarea 1, Fase 1) — `docs/fase1_extraccion.md`.
 - [x] Reporte de calidad de extracción — `data/processed/quality_report.json` (Tarea 1).
 - [x] Set de evaluación con resultados — `eval/questions.json` + `eval/results*.json` (Tarea 1).
-- ⚠️ Tabla de comparación de embeddings — pendiente (sin API key).
+- [x] Tabla de comparación de embeddings — `eval/embeddings_comparison.json`, ejecutada 2026-09-23.
 - [x] Reporte de calidad de datos (Tarea 2) — `data/processed/quality_report.json`.
 - [x] Log de costos con llamadas reales — `tarea1_rag_normativo/logs/cost_log.jsonl`.
 - 🧑 **Video (enlazado en el README)** — pendiente que lo grabes y me pases el link para agregarlo.

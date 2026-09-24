@@ -81,14 +81,57 @@ límite de usabilidad real a tener en cuenta para la demo en video: las respuest
 Streamlit tardan bastante y conviene mostrarlo con ese tiempo de espera visible, no cortarlo en
 edición como si fuera instantáneo.
 
-## 4. Comparación de embeddings: local vs. OpenAI `text-embedding-3-small` — PENDIENTE
+## 4. Comparación de embeddings: local vs. OpenAI `text-embedding-3-small` — completa
 
-El enunciado pide comparar el modelo local contra `text-embedding-3-small` de OpenAI. **Esto no
-se pudo ejecutar** porque no hay una `OPENAI_API_KEY` disponible en este proyecto (ver decisión
-documentada el 2026-09-20). El código (`eval/run_eval.py::compare_with_openai`) está escrito y
-listo, pero lanza un error explícito en vez de simular un resultado si se intenta correr sin la
-key. **Queda pendiente**: correr esta comparación si el usuario consigue una API key antes de la
-entrega, y actualizar esta sección con los números reales.
+Ejecutada el 2026-09-23 (`eval/compare_embeddings.py`), construyendo **dos índices completos
+sobre exactamente los mismos 307 fragmentos**, tal como exige el enunciado. Resultado real
+(`eval/embeddings_comparison.json`), medido sobre las 15 preguntas dentro de dominio:
+
+| Métrica | Local (`paraphrase-multilingual-MiniLM-L12-v2`) | OpenAI (`text-embedding-3-small`) |
+|---|---|---|
+| Dimensión del vector | 384 | 1536 |
+| Recall@1 | 0.667 | **0.800** |
+| Recall@3 | 0.800 | **1.000** |
+| Recall@5 | 0.800 | **1.000** |
+| Tiempo de indexación (307 fragmentos, desde cero) | 9.46 s | 6.61 s |
+| Costo de indexación | $0.00 | $0.00174 |
+| Latencia promedio por consulta | **0.032 s** | 0.610 s |
+| Costo de las 15 consultas de evaluación | $0.00 | $0.000007 |
+| **Costo total de esta comparación completa** | $0.00 | **$0.001747** |
+
+### ¿Cuál elegirías, y por qué? (el precio solo no alcanza, tal como advierte el enunciado)
+
+El precio es tan bajo ($0.0017 en total) que, mirado solo por costo, "usa OpenAI y ya" parece
+obvio. Pero hay 3 factores que el precio no captura, y que sí importan para este proyecto
+específico:
+
+1. **Latencia: OpenAI es ~19 veces más lento por consulta** (0.61 s vs. 0.032 s) porque cada
+   consulta requiere una ida y vuelta a internet. Para un asistente interactivo esto es
+   perceptible; a mayor escala (más usuarios simultáneos) se vuelve un cuello de botella real.
+2. **Dependencia de disponibilidad — vivida en carne propia en esta misma sesión**: al intentar
+   correr esta comparación, la cuenta de OpenAI devolvió `insufficient_quota` (sin saldo) y bloqueó
+   por completo la ejecución hasta cargar crédito manualmente. El modelo local **nunca puede
+   fallar por un problema de facturación de un tercero** — no depende de que una cuenta externa
+   tenga saldo, esté activa, o que el servicio esté disponible en ese momento (relevante para una
+   demo en vivo o un despliegue sin presupuesto garantizado).
+3. **Vector 4 veces más pesado** (1536 vs 384 dimensiones): a la escala de este proyecto (307
+   fragmentos) es irrelevante, pero si el corpus creciera mucho, el índice OpenAI pesaría y
+   tardaría más en buscar proporcionalmente.
+
+**Contra estos 3 puntos, el argumento a favor de OpenAI es real y fuerte**: la mejora de recall
+no es marginal — pasa de "encuentra la respuesta correcta 2 de cada 3 veces en el primer lugar"
+(local) a "la encuentra siempre entre las 3 primeras" (OpenAI, Recall@3=1.0). Para un sistema que
+cita normativa legal, donde una cita incorrecta o ausente es un problema serio (recordar la
+restricción del enunciado: "un sistema que responde con confianza y de forma equivocada es peor
+que no tener sistema"), esa mejora de precisión pesa mucho.
+
+**Decisión para este proyecto**: se mantiene el modelo **local** como predeterminado en
+`config.yaml` (`embeddings.primary: local`), priorizando costo cero, baja latencia y no depender
+de un tercero para una demo académica — pero se documenta que si este sistema pasara a producción
+real con usuarios que dependen de la exactitud de las citas legales, la mejora de Recall de
+OpenAI (especialmente pasar de 0.667 a 0.800 en el primer resultado) justificaría los $0.0017 y
+los 580 ms adicionales de latencia por consulta. No es una decisión de "cuál es mejor en
+abstracto", sino de qué se prioriza en cada contexto de uso.
 
 ## 5. Costos de la evaluación
 

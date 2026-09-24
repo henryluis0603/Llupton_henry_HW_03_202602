@@ -1,0 +1,29 @@
+{
+  "local": {
+    "provider": "local",
+    "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "vector_dimension": 384,
+    "recall@1": 0.667,
+    "recall@3": 0.8,
+    "recall@5": 0.8,
+    "indexing_time_seconds": 9.46,
+    "indexing_cost_usd": 0.0,
+    "avg_query_latency_seconds": 0.0322,
+    "query_cost_usd_this_eval": 0.0,
+    "total_cost_usd": 0.0
+  },
+  "openai": {
+    "provider": "openai",
+    "model": "text-embedding-3-small",
+    "vector_dimension": 1536,
+    "recall@1": 0.8,
+    "recall@3": 1.0,
+    "recall@5": 1.0,
+    "indexing_time_seconds": 6.61,
+    "indexing_cost_usd": 0.00174,
+    "avg_query_latency_seconds": 0.6104,
+    "query_cost_usd_this_eval": 7e-06,
+    "total_cost_usd": 0.001747
+  },
+  "_nota_metodologica": "El indexing_time_seconds del local se midio en una corrida aparte forzando reconstruccion completa (rm embeddings.npy+metadata.jsonl antes de correr build_index.py), porque la primera corrida de compare_embeddings.py reuso el indice local ya existente (idempotencia) y marcaba 0.0s, lo cual no era comparable contra el tiempo real de construccion desde cero del indice OpenAI."
+}

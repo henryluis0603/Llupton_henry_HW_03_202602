@@ -1,0 +1,10 @@
+{
+  "provider": "openai",
+  "model_name": "text-embedding-3-small",
+  "embedding_dim": 1536,
+  "n_chunks_total": 307,
+  "n_chunks_newly_embedded": 307,
+  "n_chunks_reused_from_previous_index": 0,
+  "indexing_time_seconds": 6.61,
+  "cost_usd_this_run": 0.00174
+}

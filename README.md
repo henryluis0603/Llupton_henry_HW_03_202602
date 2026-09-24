@@ -52,16 +52,19 @@ Ver también los diagramas de pipeline: [Tarea 1](docs/pipeline_tarea1.md) ·
 - **Fase 3 (Motor RAG)**: completa. Ver [docs/fase3_engine.md](docs/fase3_engine.md) — embeddings
   y generación con modelos locales de Hugging Face (sin API key disponible), estrategia de manejo
   de versiones y limitación de alcance documentadas.
-- **Fase 4 (Evaluación)**: completa salvo la comparación con OpenAI (bloqueada por falta de API
-  key). Ver [docs/fase4_evaluacion.md](docs/fase4_evaluacion.md) — Recall@1=0.667, Recall@3=
-  Recall@5=0.800; con la mitigación de segunda capa, la corrida completa (20 preguntas, con
-  generación real) dio **15/15 in_domain respondidas y 5/5 out_of_domain correctamente
-  abstenidas** (100% en ambos), frente a solo 40% de abstención correcta usando similitud sola.
-  Latencia real: ~43 s/pregunta en CPU. Costo real: $0.00 (proveedor local).
+- **Fase 4 (Evaluación)**: completa, incluyendo la comparación de embeddings con OpenAI. Ver
+  [docs/fase4_evaluacion.md](docs/fase4_evaluacion.md) — Recall@1=0.667, Recall@3=Recall@5=0.800
+  (local); con la mitigación de segunda capa, la corrida completa (20 preguntas, con generación
+  real) dio **15/15 in_domain respondidas y 5/5 out_of_domain correctamente abstenidas** (100% en
+  ambos). Latencia real: ~43 s/pregunta en CPU. **Comparación local vs. OpenAI
+  `text-embedding-3-small`** (2026-09-23, sobre los mismos 307 fragmentos): OpenAI da mejor
+  Recall (0.8/1.0/1.0 vs. 0.667/0.8/0.8) pero es ~19x más lento por consulta (0.61s vs. 0.032s) y
+  depende de un tercero (se experimentó en vivo un bloqueo por falta de saldo en la cuenta). Costo
+  total de la comparación: $0.0017 USD. Se mantiene el modelo local como predeterminado; ver la
+  justificación completa en el documento.
 - **Fase 5 (Streamlit)**: `app.py` implementado, consume el motor real (`src/engine.py`).
 
-**Tarea 1 completa** (las 5 fases), con la única salvedad documentada de la comparación de
-embeddings con OpenAI (pendiente por falta de API key).
+**Tarea 1 100% completa**, las 5 fases sin ninguna salvedad pendiente.
 
 ### Tarea 2 (Radar de contrataciones)
 
